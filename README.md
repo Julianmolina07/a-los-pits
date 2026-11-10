@@ -1,12 +1,19 @@
 # A LOS PITS
-Sitio estático en español, negro/plata, sin dependencias. Abrir index.html o servir esta carpeta con un servidor HTTP.
 
-## Datos
-Editar `data.js` para actualizar WhatsApp e inventario. Todos los productos actuales son DEMO: los precios, batería, garantías y estados no representan ofertas reales. Sustituir ilustraciones por fotografías de cada unidad antes de convertirlo en catálogo comercial. Mantener el aviso demo mientras haya ejemplos.
+Catálogo estático de Apple, en español y negro/plata. Prioriza la compra de contado por WhatsApp. No procesa pagos ni ofrece financiación.
 
-El formulario prepara una solicitud y muestra su contenido antes de abrir WhatsApp. No almacena datos ni envía mensajes automáticamente. El comercio determina la valoración y la diferencia tras revisar el dispositivo.
+## Catálogo
+Categorías: iPhone, Mac, iPad, Apple Watch, AirPods y accesorios. Filtra por categoría, condición y búsqueda; ordena por precio. Cada producto abre una ficha con configuración, estado, garantía, color y observaciones. Las ilustraciones vectoriales son conceptuales, no fotos de inventario.
 
-## GitHub Pages
-Subir estos archivos a la rama main de un repositorio. En Settings > Pages, seleccionar Deploy from a branch, rama main y carpeta / (root). También se incluye un flujo opcional pages.yml para usar GitHub Actions si se sube la carpeta .github y se elige ese origen. No requiere compilación y funciona en la ruta /a-los-pits/ porque todos los archivos usan rutas relativas.
+Todos los productos, precios y características son DEMO. No representan disponibilidad ni ofertas reales. Editar `data.js` solo con información confirmada de la tienda. WhatsApp: +57 3002254902. No sustituir el catálogo demo por datos comerciales sin aportar fotos reales por unidad y verificar condiciones, garantía, precio y compatibilidad. La referencia de local futuro no se muestra en el sitio.
 
-Identidad visual: dos imágenes proporcionadas por el usuario. Dispositivos: ilustraciones conceptuales hechas con CSS, no fotografías del inventario.
+## Compra y retoma
+La acción principal prepara una consulta de contado con la referencia del producto. Retoma es una opción secundaria al final, desplegable. Acepta cualquier producto del catálogo como destino y solicita información del celular entregado. Muestra el mensaje antes de abrir WhatsApp; no envía automáticamente. La tienda decide aceptación, valoración y diferencia tras revisar.
+
+Medios de pago, envíos, garantía y condiciones comerciales pendientes se indican como por confirmar; no se inventan compromisos. La página incluye preguntas frecuentes y un aviso de privacidad sobre el funcionamiento del formulario.
+
+## Publicación
+GitHub Pages: rama main, carpeta raíz, Deploy from a branch. No requiere dependencias ni compilación. Rutas relativas compatibles con /a-los-pits/. El flujo .github/workflows/pages.yml local es opcional y no está activado en el repositorio publicado.
+
+## Verificación
+Comprobar categorías y condición combinadas, búsqueda vacía y sin resultados, orden, fichas, enlaces de compra, retoma, privacidad, navegación por teclado y diseño móvil/escritorio. Para vista local, servir esta carpeta por HTTP.
